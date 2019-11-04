@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  rust_dev:
+    image: rust
+    container_name: rust_container
+    working_dir: /home/app
+    volumes:
+      - ./:/home/app
+    entrypoint:
+      - /bin/bash
